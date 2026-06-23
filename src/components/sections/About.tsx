@@ -22,7 +22,7 @@ export default function About() {
         <SectionHeading
           label="Cerita Kami"
           title="Lebih dari Sekadar Pabrik Kopi"
-          subtitle="Sebuah rumah tempat ilmu, filosofi, dan cita rasa bersatu — dipandu oleh sang maestro, H. Fahrudin"
+          subtitle="Sebuah rumah tempat ilmu, filosofi, dan cita rasa bersatu — dipandu oleh sang maestro, H. Fachrudin"
         />
 
         {/* Hero Row: Image + Story */}
@@ -36,10 +36,10 @@ export default function About() {
             className="lg:col-span-2 relative"
           >
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl border-4 border-white">
-              {/* Main visual: H. Fahrudin portrait */}
+              {/* Main visual: H. Fachrudin portrait */}
               <Image
                 src="/images/h-fahrudin.png"
-                alt="H. Fahrudin - Maestro Kopi Klungkung, Pemilik Panca Perkasa"
+                alt="H. Fachrudin - Maestro Kopi Klungkung, Pemilik Panca Perkasa"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover"
@@ -50,7 +50,7 @@ export default function About() {
               {/* Content on image */}
               <div className="absolute inset-0 flex flex-col justify-end p-8 text-white">
                 <p className="font-heading text-3xl sm:text-4xl font-bold mb-2 leading-tight">
-                  H. Fahrudin
+                  H. Fachrudin
                 </p>
                 <div className="flex items-center gap-2 mb-3">
                   <div className="w-8 h-0.5 bg-amber" />
@@ -104,7 +104,7 @@ export default function About() {
               <p className="text-coffee/80 leading-relaxed text-base sm:text-lg pl-8">
                 Di sebuah gang sederhana di Jalan Werkudara, Klungkung, berdiri
                 pabrik kopi yang <strong className="text-coffee">tak biasa</strong>.
-                Di sini, H. Fahrudin tidak hanya memanggang biji kopi — ia
+                Di sini, H. Fachrudin tidak hanya memanggang biji kopi — ia
                 memanggang <strong className="text-coffee">semangat berbagi ilmu</strong>.
               </p>
             </div>

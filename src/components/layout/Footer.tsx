@@ -94,7 +94,7 @@ export default function Footer() {
               Siap Mencoba?
             </h4>
             <p className="text-cream/60 text-sm mb-4">
-              Kunjungi pabrik kami atau pesan langsung via WhatsApp. Pak Fahrudin siap menyambut Anda.
+              Kunjungi pabrik kami atau pesan langsung via WhatsApp. Pak Fachrudin siap menyambut Anda.
             </p>
             <a
               href={getWhatsAppUrl(whatsappMessages.order)}

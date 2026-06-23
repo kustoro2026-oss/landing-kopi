@@ -61,7 +61,7 @@ export const testimonials: Testimonial[] = [
     date: "1 tahun lalu",
     rating: 5,
     review:
-      "Kopi Panca Perkasa asuhan H. Fahrudin benar-benar autentik Bali... rasanya mantap dan nikmat.",
+      "Kopi Panca Perkasa asuhan H. Fachrudin benar-benar autentik Bali... rasanya mantap dan nikmat.",
   },
 ];
 

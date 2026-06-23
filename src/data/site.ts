@@ -27,10 +27,10 @@ export const siteConfig = {
 };
 
 export const whatsappMessages = {
-  order: `Halo Pak Fahrudin, saya tertarik dengan kopi Panca Perkasa dan ingin memesan. Mohon info jenis kopi yang tersedia dan harganya. Terima kasih! ☕`,
-  visit: `Halo Pak Fahrudin, saya berencana berkunjung ke pabrik untuk melihat proses roasting. Apakah bisa hari ini? Terima kasih! 🙏`,
-  reseller: `Halo Pak Fahrudin, saya tertarik menjadi reseller kopi Panca Perkasa. Mohon info ketentuan dan harga reseller. Terima kasih! 🤝`,
-  general: `Halo Pak Fahrudin, saya ingin tahu lebih banyak tentang kopi Panca Perkasa. Terima kasih!`,
+  order: `Halo Pak Fachrudin, saya tertarik dengan kopi Panca Perkasa dan ingin memesan. Mohon info jenis kopi yang tersedia dan harganya. Terima kasih! ☕`,
+  visit: `Halo Pak Fachrudin, saya berencana berkunjung ke pabrik untuk melihat proses roasting. Apakah bisa hari ini? Terima kasih! 🙏`,
+  reseller: `Halo Pak Fachrudin, saya tertarik menjadi reseller kopi Panca Perkasa. Mohon info ketentuan dan harga reseller. Terima kasih! 🤝`,
+  general: `Halo Pak Fachrudin, saya ingin tahu lebih banyak tentang kopi Panca Perkasa. Terima kasih!`,
 };
 
 export function getWhatsAppUrl(message: string): string {

@@ -42,7 +42,7 @@ export default function CTASection() {
           </h2>
 
           <p className="text-white/70 text-base sm:text-lg leading-relaxed mb-10">
-            Kunjungi pabrik kami atau pesan langsung. Pak H. Fahrudin siap
+            Kunjungi pabrik kami atau pesan langsung. Pak H. Fachrudin siap
             menyambut Anda — kapan saja, 24 jam setiap hari. Gratis konsultasi
             dan edukasi kopi.
           </p>

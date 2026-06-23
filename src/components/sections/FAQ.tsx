@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "Apakah ada tur atau kelas kopi?",
-    a: "Ya, dan ini GRATIS! Setiap kunjungan ke pabrik kami adalah sesi edukasi. Pak H. Fahrudin secara personal akan menjelaskan filosofi kopi, proses pemilihan biji, teknik roasting, dan banyak lagi. Anda akan pulang dengan ilmu baru — dijamin!",
+    a: "Ya, dan ini GRATIS! Setiap kunjungan ke pabrik kami adalah sesi edukasi. Pak H. Fachrudin secara personal akan menjelaskan filosofi kopi, proses pemilihan biji, teknik roasting, dan banyak lagi. Anda akan pulang dengan ilmu baru — dijamin!",
   },
   {
     q: "Bisa jadi reseller?",

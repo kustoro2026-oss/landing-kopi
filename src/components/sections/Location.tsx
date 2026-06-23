@@ -13,7 +13,7 @@ export default function Location() {
         <SectionHeading
           label="Lokasi"
           title="Kunjungi Pabrik Kami di Klungkung"
-          subtitle="Datang langsung dan rasakan pengalaman kopi autentik bersama H. Fahrudin"
+          subtitle="Datang langsung dan rasakan pengalaman kopi autentik bersama H. Fachrudin"
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">

@@ -66,7 +66,7 @@ export default function Hero() {
           {/* Subheadline */}
           <p className="text-white/80 text-sm sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed mb-6 sm:mb-8">
             Rasakan filosofi, ilmu, dan cita rasa autentik Bali. Dari pabrik kami
-            di Klungkung, H. Fahrudin membagikan ilmu pengolahan kopi kepada setiap
+            di Klungkung, H. Fachrudin membagikan ilmu pengolahan kopi kepada setiap
             tamu — tanpa pamrih.
           </p>
 

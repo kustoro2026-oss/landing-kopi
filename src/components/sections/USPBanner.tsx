@@ -7,7 +7,7 @@ const uspItems = [
   {
     icon: GraduationCap,
     title: "Edukasi Kopi Gratis",
-    desc: "Belajar langsung dari H. Fahrudin — filosofi, seni, dan ilmu kopi",
+    desc: "Belajar langsung dari H. Fachrudin — filosofi, seni, dan ilmu kopi",
     color: "bg-amber/10 text-amber",
   },
   {
