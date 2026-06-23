@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Coffee } from "lucide-react";
-import { siteConfig } from "@/data/site";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { href: "#about", label: "Tentang" },
@@ -24,6 +24,13 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Dynamic colors based on scroll
+  const textColor = scrolled ? "text-coffee" : "text-white";
+  const textMuted = scrolled ? "text-coffee/60" : "text-white/70";
+  const textHover = scrolled ? "hover:text-coffee" : "hover:text-white";
+  const bgHover = scrolled ? "hover:bg-amber/10" : "hover:bg-white/10";
+  const burgerColor = scrolled ? "text-coffee" : "text-white";
+
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -39,14 +46,26 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-coffee rounded-xl flex items-center justify-center group-hover:bg-amber transition-colors duration-300">
-              <Coffee className="w-5 h-5 text-cream" />
+            <div className="relative w-10 h-10 flex-shrink-0">
+              <Image
+                src="/android-chrome-192x192.png"
+                alt="Panca Perkasa Logo"
+                width={40}
+                height={40}
+                className="object-contain group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div className="hidden sm:block">
-              <p className="font-heading font-bold text-sm text-coffee leading-tight">
+              <p
+                className={`font-heading font-bold text-sm leading-tight transition-colors duration-300 ${textColor}`}
+              >
                 Panca Perkasa
               </p>
-              <p className="text-xs text-coffee/60">Coffee Roasting</p>
+              <p
+                className={`text-xs transition-colors duration-300 ${textMuted}`}
+              >
+                Coffee Roasting
+              </p>
             </div>
           </a>
 
@@ -56,7 +75,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="px-4 py-2 text-sm text-coffee/70 hover:text-coffee rounded-lg hover:bg-amber/10 transition-all duration-200"
+                className={`px-4 py-2 text-sm rounded-lg transition-all duration-200 ${textMuted} ${textHover} ${bgHover}`}
               >
                 {link.label}
               </a>
@@ -66,7 +85,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 rounded-lg text-coffee hover:bg-amber/10 transition-colors"
+            className={`lg:hidden p-2 rounded-lg transition-colors ${burgerColor} ${bgHover}`}
             aria-label="Toggle menu"
           >
             {isOpen ? (

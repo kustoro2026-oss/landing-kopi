@@ -7,7 +7,7 @@ import Button from "@/components/ui/Button";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
@@ -32,8 +32,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-20 section-container !py-0 flex flex-col items-center text-center">
+      {/* Content — offset upward from center */}
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center -mt-16 sm:-mt-20 lg:-mt-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-4 py-2 mb-8 border border-white/30"
+            className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-4 py-2 mb-6 sm:mb-8 border border-white/30"
           >
             <div className="flex">
               {[...Array(5)].map((_, i) => (
@@ -58,20 +58,20 @@ export default function Hero() {
           </motion.div>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-white leading-tight text-balance mb-6">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-white leading-tight text-balance mb-4 sm:mb-6">
             Lebih dari Sekadar{" "}
             <span className="text-amber">Kopi</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-white/80 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="text-white/80 text-sm sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed mb-6 sm:mb-8">
             Rasakan filosofi, ilmu, dan cita rasa autentik Bali. Dari pabrik kami
             di Klungkung, H. Fahrudin membagikan ilmu pengolahan kopi kepada setiap
             tamu — tanpa pamrih.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <Button
               href={getWhatsAppUrl(whatsappMessages.order)}
               variant="whatsapp"
@@ -99,7 +99,7 @@ export default function Hero() {
             opacity: { duration: 0.5 },
             y: { repeat: Infinity, duration: 2, ease: "easeInOut" },
           }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          className="absolute bottom-8 sm:bottom-10 left-1/2 -translate-x-1/2"
         >
           <ChevronDown className="w-6 h-6 text-white/60" />
         </motion.div>
