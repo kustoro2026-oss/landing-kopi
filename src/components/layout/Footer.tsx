@@ -1,4 +1,5 @@
-import { Coffee, MapPin, Phone, Clock } from "lucide-react";
+import { MapPin, Phone, Clock } from "lucide-react";
+import Image from "next/image";
 import { siteConfig, getWhatsAppUrl, whatsappMessages } from "@/data/site";
 
 export default function Footer() {
@@ -10,8 +11,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-amber rounded-xl flex items-center justify-center">
-                <Coffee className="w-5 h-5 text-coffee-dark" />
+              <div className="relative w-10 h-10 flex-shrink-0">
+                <Image
+                  src="/android-chrome-192x192.png"
+                  alt="Panca Perkasa Logo"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
               </div>
               <div>
                 <p className="font-heading font-bold text-sm leading-tight">
