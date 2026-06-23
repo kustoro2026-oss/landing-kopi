@@ -52,7 +52,7 @@ export default function Navbar() {
                 alt="Panca Perkasa Logo"
                 width={40}
                 height={40}
-                className="object-contain group-hover:scale-105 transition-transform duration-300"
+                className="object-contain rounded-full group-hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="hidden sm:block">

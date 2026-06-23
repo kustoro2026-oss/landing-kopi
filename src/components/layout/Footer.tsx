@@ -17,7 +17,7 @@ export default function Footer() {
                   alt="Panca Perkasa Logo"
                   width={40}
                   height={40}
-                  className="object-contain"
+                  className="object-contain rounded-full"
                 />
               </div>
               <div>
